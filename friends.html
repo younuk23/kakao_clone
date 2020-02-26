@@ -16,6 +16,10 @@
     display:flex;
     justify-content: space-between;
 }
+.g-avatar{
+    weight: 100px;
+    height: 100px;
+}
 </style>
 <body>
     <div class="status-bar">
@@ -39,36 +43,76 @@
                 <i class="fas fa-search"></i>
             </span>
             <span class="header__icon">
-                <i class="far fa-comment-dots"></i>
-            </span>
-            <span class="header__icon">
                 <i class="fas fa-cog"></i>
             </span>
         </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__list__item">
-                    <a href="friends.html" class="nav__list-link">
-                        <i class="fas fa-user"></i>
-                    </a>
-                </li>
-                <li class="nav__list__item">
-                    <a href="index.html" class="nav__list-link">
-                        <i class="far fa-comment-dots"></i>
-                    </a>
-                </li>
-                <li class="nav__list__item">
-                    <a href="find.html" class="nav__list-link">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </li>
-                <li class="nav__list__item">
-                    <a href="more.html" class="nav__list-link">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </header>
+    <main class="friends">
+        <header class="friends__header">
+            <div class="friends__friend friend friend--large">
+                <div class="friend__column">
+                    <img src="../kakao_clone/images/me.jpeg" alt="profile-avatar" class="g-avatar">
+                    <div class="friend__content">
+                        <span class="friend__name friend__name--large">Yeonuk</span>
+                        <span class="friend__status-messege">None</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="friends__plus">
+            <h5 class="friends__plus__title">
+                Plus Friend
+            </h5>
+            <div class="friends__friend friend">
+                <img src="../kakao_clone/images/avatar.jpg" alt="profile-avatar" class="g-avatar">
+                <div class="friend__content">
+                    <span class="friend__name">Plus Friend</span>
+                </div>
+            </div>
+        </div>
+        <ul class="friends__list">
+            <h5 class="friends__list__title">Friends 14</h5>
+            <li class="friends__friend friend friend--large">
+                <div class="friend__column">
+                    <img src="../kakao_clone/images/us.jpeg" alt="profile-avatar" class="g-avatar">
+                    <div class="friend__content">
+                        <span class="friend__name friend__name--large">Yeonuk</span>
+                        <span class="friend__status-messege">None</span>
+                    </div>
+                </div>
+                <div class="friend__column">
+                    <span>
+                        지독하게-FT ISLAND
+                    </span>
+                    <i class="fas fa-play"></i>
+                </div>  
+            </li>
+        </ul>
+    </main>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__list__item">
+                <a href="friends.html" class="nav__list-link">
+                    <i class="fas fa-user"></i>
+                </a>
+            </li>
+            <li class="nav__list__item">
+                <a href="index.html" class="nav__list-link">
+                    <i class="far fa-comment-dots"></i>
+                </a>
+            </li>
+            <li class="nav__list__item">
+                <a href="find.html" class="nav__list-link">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+            <li class="nav__list__item">
+                <a href="more.html" class="nav__list-link">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
 </body>
 </html>

@@ -16,6 +16,9 @@
     display:flex;
     justify-content: space-between;
 }
+.g-avatar{
+    width: 100px;
+}
 </style>
 <body>
     <div class="status-bar">
@@ -39,36 +42,89 @@
                 <i class="fas fa-search"></i>
             </span>
             <span class="header__icon">
-                <i class="far fa-comment-dots"></i>
-            </span>
-            <span class="header__icon">
                 <i class="fas fa-cog"></i>
             </span>
         </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__list__item">
-                    <a href="friends.html" class="nav__list-link">
-                        <i class="far fa-user"></i>
-                    </a>
+    </header>
+    <main class="find">
+        <header class="find__header">
+            <ul class="find__header-list">
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="fas fa-qrcode fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                        QR Code
+                    </span>
                 </li>
-                <li class="nav__list__item">
-                    <a href="index.html" class="nav__list-link">
-                        <i class="far fa-comment-dots"></i>
-                    </a>
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="fas fa-user-plus fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                       Add by Contact
+                    </span>
                 </li>
-                <li class="nav__list__item">
-                    <a href="find.html" class="nav__list-link">
-                        <i class="fas fa-search"></i>
-                    </a>
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="fas fa-passport fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                        Add by ID
+                    </span>
                 </li>
-                <li class="nav__list__item">
-                    <a href="more.html" class="nav__list-link">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </a>
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                        Invite
+                    </span>
                 </li>
             </ul>
-        </nav>
-    </header>
+        </header>
+        <ul class="find__recommended">
+            <h5 class="find__list__title">
+                Recommende Friedns
+            </h5>
+            <li class="find__friend friend friend--large">
+                <div class="friend__column">
+                    <img src="../kakao_clone/images/us.jpeg" alt="profile-avatar" class="g-avatar">
+                    <div class="friend__content">
+                        <span class="friend__name friend__name--large">
+                            Yeonuk
+                        </span>
+                    </div>
+                </div>
+                <div class="friend__column">
+                    <i class="fas fa-user-plus"></i>
+                </div>  
+            </li>
+    </main>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__list__item">
+                <a href="friends.html" class="nav__list-link">
+                    <i class="far fa-user"></i>
+                </a>
+            </li>
+            <li class="nav__list__item">
+                <a href="index.html" class="nav__list-link">
+                    <i class="far fa-comment-dots"></i>
+                </a>
+            </li>
+            <li class="nav__list__item">
+                <a href="find.html" class="nav__list-link">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+            <li class="nav__list__item">
+                <a href="more.html" class="nav__list-link">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
 </body>
 </html>
