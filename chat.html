@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/92e02b35f3.js" crossorigin="anonymous"></script>
+    <title>Chat| KaKao Clone</title>
+</head>
+<style>
+.status-bar{
+    display:flex;
+    justify-content: space-between;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+.setting-list{
+    display:flex;
+    justify-content: space-between;
+}
+.g-avatar{
+    width: 100px;
+}
+</style>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span class="status-bar__clock">13:54</span>
+        </div>
+        <div class="status-bar__column">
+            <i class="far fa-clock"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <span class="status-bar__column__battery-level">100%</span>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__header-column">
+            <span class="header_icon">
+                <a href="index.html">
+                    <i class="fas fa-arrow-left fa-2x"></i>
+                </a>
+            </span>
+            <h1 title="setting 페이지입니다" class="header__title">
+                Chats-NomadCorder
+            </h1>
+        </div>
+        <div class="header__header-column">
+            <span class="header__icon">
+                <i class="fas fa-search"></i>
+            </span>
+            <span class="header__icon">
+     <i class="fas fa-bars"></i>
+            </span>
+        </div>
+    </header>
+    <main class="chat">
+        <ul class="chat__messages">
+            <span class="chat__timestamp">
+                Friday, January 11,2019
+            </span>
+            <li class="chat__incoming-message message">
+                <img src="../kakao_clone/images/me.jpeg" class="g-avatar">
+                 <div class="message__content">   
+                    <span class="messege__author">
+                        NomadCorder
+                    </span>
+                    <div class="message__bubble">
+                        A lot of congrats on your engagement
+                    </div>
+                </div>
+                <span class="messege__timestamp">
+                    11:54
+                </span>
+            </li>
+            <li class="chat__export-message message">
+                <span class="messege__timestamp">
+                    11:56
+                </span>
+                <div class="message__content">
+                    <div class="message__bubble">
+                        A lot of congrats on your engagement
+                    </div>
+                </div>
+            </li> 
+        </ul>
+        <div class="chat__write">
+            <div class="write__column">
+                <i class="fas fa-plus-square"></i>
+            </div>
+            <div class="write__column">
+                <input type="text" placeholder="Write message" class="chat__write-input">
+            </div>
+            <div class="write__column">
+                <span class="chat__write-icon">
+                    <i class="fas fa-smile"></i>
+                </span>
+                <span class="chat__write-icon">
+                    <i class="fas fa-microphone"></i>
+                </span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -16,6 +16,10 @@
     display:flex;
     justify-content: space-between;
 }
+.setting-list{
+    display:flex;
+    justify-content: space-between;
+}
 </style>
 <body>
     <div class="status-bar">
@@ -32,37 +36,83 @@
     </div>
     <header class="header">
         <div class="header__header-column">
-            <h1 class="header__title">settings</h1>
+            <span class="header_icon">
+                <a href="more.html">
+                    <i class="fas fa-arrow-left fa-2x"></i>
+                </a>
+            </span>
+            <h1 title="setting 페이지입니다" class="header__title">Settings</h1>
         </div>
         <div class="header__header-column">
-            s<pan class="header__icon">
+            <span class="header__icon">
                 <i class="fas fa-search"></i>
             </span>
         </div>
     </header>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__list__item">
-                <a href="friends.html" class="nav__list-link">
-                    <i class="fas fa-user"></i>
-                </a>
-            </li>
-            <li class="nav__list__item">
-                <a href="index.html" class="nav__list-link">
-                    <i class="fas fa-comment-dots"></i>
-                </a>
-            </li>
-            <li class="nav__list__item">
-                <a href="find.html" class="nav__list-link">
-                    <i class="fas fa-search"></i>
-                </a>
-            </li>
-            <li class="nav__list__item">
-                <a href="more.html" class="nav__list-link">
-                    <i class="fas fa-ellipsis-h"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <main class="settings">
+        <section class="settings__column">
+            <ul class="settings__setting">
+                <li class="setting-list">
+                    <div class="setting-list__column">
+                        <span class="setting-list-icon">
+                            <i class="fas fa-bell"></i>
+                        </span>
+                        <span class="setting-list__title">
+                            Notices
+                        </span>
+                    </div>
+                </li>
+                <li class="setting-list">
+                    <div class="setting-list__column">
+                        <span class="setting-list-icon">
+                            <i class="fas fa-bell"></i>
+                        </span>
+                        <span class="setting-list__title">
+                            KaKao Lab
+                        </span>
+                    </div>
+                </li>
+                <li class="setting-list">
+                    <div class="setting-list__column">
+                        <span class="setting-list-icon">
+                            <i class="fas fa-bell"></i>
+                        </span>
+                        <span class="setting-list__title">
+                            Version
+                        </span>
+                    </div>
+                    <div class="setting-list__column">
+                        <span class="version__now">
+                            8.2.7
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="settings__column">
+            <ul class="settings__setting">
+                <li class="setting-list">
+                    <div class="setting-list__column">
+                        <span class="setting-list-icon">
+                            <i class="fas fa-bell"></i>
+                        </span>
+                        <span class="setting-list__title">
+                           Privacy
+                        </span>
+                    </div>
+                </li>
+                <li class="setting-list">
+                    <div class="setting-list__column">
+                        <span class="setting-list-icon">
+                            <i class="fas fa-bell"></i>
+                        </span>
+                        <span class="setting-list__title">
+                            Notifications
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
