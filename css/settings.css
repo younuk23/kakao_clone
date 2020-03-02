@@ -1,0 +1,20 @@
+.settings__setting{
+    border-width: 0.01cm 0cm;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-style: solid;
+}
+.settings__setting{
+    margin: 0px;
+    padding: 17px 0px;
+}
+.settings__setting .setting-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.setting-list__column{
+    margin: 13px;
+}
+.version__now{
+    opacity: 50%;
+}

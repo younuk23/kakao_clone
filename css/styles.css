@@ -4,12 +4,33 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav.css";
+@import "settings.css";
+@import "friends.css";
+@import "find.css";
+*{
+    box-sizing: border-box;
+}
+a{
+    cursor: pointer;
+}
 body{
     backgroud-color: white;
     padding: 10px 20px;
     color: #020202;
     font-family: 'nanum myeongjo';
 }
+
 a{
     color: inherit;
+}
+
+.g-avatar{
+    border-radius: 35%;
+    width: 35px;
+    height: 35px;
+}
+
+.avatar-large{
+    width:50px;
+    height:50px;
 }

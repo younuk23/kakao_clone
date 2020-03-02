@@ -1,0 +1,13 @@
+.find__header-list{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:30px;
+    align-items: center;
+}
+
+.header-btn__icon{
+    display:block;
+}
+.header-btn__title{
+    display:block;
+}
